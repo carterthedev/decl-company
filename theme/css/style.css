@@ -3432,16 +3432,14 @@ label {
 /* Optional: show text on hover */
 .whatsapp-button span {
   display: block;
-  position: absolute;
-  bottom: 60px; /* text above button */
-  right: 0;
-  background: white;
-  color: #25d366;
+  color: #ffb600;
   padding: 5px 10px;
   border-radius: 5px;
-  opacity: 0.8;
+  opacity: 1;
   font-size: 14px;
-  line-height: -2px;
+  line-height: 1.3;
+  display: none;
+  background-color: #25d366 !important;
 }
 
 .whatsapp-button a:hover {
