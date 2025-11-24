@@ -9,18 +9,38 @@
       <div class="container h-100">
         <div class="row align-items-center h-100">
           <div class="col-md-12 bg-theme p-4 rounded" style="opacity: 0.9">
-            <h3 class="slide-title" data-animation-in="slideInRight">
+            <h3
+              class="slide-title"
+              data-animation-in="slideInRight"
+              style="
+                /* Override styles for slide titles */
+                h3.slide-title {
+                  font-family: 'Montserrat', 'Roboto', sans-serif; /* keep heading style */
+
+                  text-transform: none !important; /* retain original text casing */
+
+                  color: #212121; /* override color if needed */
+                  text-decoration: none !important; /* remove underline from inline style */
+                }
+
+                /* Optional: animation-specific adjustments */
+                h3.slide-title[data-animation-in] {
+                  font-family: inherit;
+                  font-weight: inherit;
+                  color: inherit;
+                  text-transform: inherit;
+                }
+              "
+            >
               Everyday, On time, for you
             </h3>
             <div class="w-100 text-start mb-3" data-animation-in="slideInLeft">
               <p class="slider-description lead">
-                <strong
-                  >Diamond Engineering Company Limited powers small and medium
-                  hardware businesses with premium interior finishing products.
-                  Committed to quality, consistency, and exceptional service,
-                  ensuring your materials are delivered fast, reliably, and
-                  right on time.</strong
-                >
+                Diamond Engineering Company Limited powers small and medium
+                hardware businesses with premium interior finishing products.
+                Committed to quality, consistency, and exceptional service,
+                ensuring your materials are delivered fast, reliably, and right
+                on time.
               </p>
             </div>
             <p data-animation-in="slideInLeft" data-duration-in="1.2">
@@ -150,7 +170,7 @@
         <div class="col-md-8 text-center text-md-left">
           <div class="call-to-action-text">
             <h3 class="action-title">
-              We understand your needs on construction
+              High-quality construction and interior finishing materials
             </h3>
           </div>
         </div>
@@ -169,6 +189,113 @@
   <!-- Container end -->
 </section>
 <!-- Action end -->
+<section id="ts-features" class="ts-features py-5 bg-light">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold text-dark">Our Products</h2>
+      <p class="lead text-muted">
+        Premium interior solutions designed with elegance, durability, and precision craftsmanship.
+      </p>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="row g-5">
+
+      <!-- Product Card 1 -->
+      <div class="col-lg-6">
+        <div class="product-card h-100 p-4 shadow-sm bg-white rounded-4">
+          <h2 class="fs-3 fw-bold text-primary">Doors & Accessories</h2>
+          <h3 class="fs-5 text-secondary mt-2 mb-3">
+            Innovative Solutions for Interior Design
+          </h3>
+
+          <p>
+            We manufacture premium-quality doors that suit a variety of architectural styles and functional
+            needs. Each piece is crafted with precision and undergoes strict quality testing to ensure
+            long-lasting performance and aesthetic appeal.
+          </p>
+
+          <figure class="mt-4">
+            <picture>
+              <source srcset="images/projects/project1.png" type="image/webp">
+              <source srcset="images/projects/project1.png" type="image/jpeg">
+              <img
+                src="images/projects/project1.png"
+                alt="Premium interior doors - Diamond Engineering"
+                class="img-fluid rounded-4 shadow w-100 product-img"
+                loading="lazy"
+              >
+            </picture>
+            <figcaption class="small text-muted text-center mt-3">
+              Available in multiple finishes, hardware options & security features.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col-lg-6">
+        <div class="product-card h-100 p-4 shadow-sm bg-white rounded-4">
+          <h2 class="fs-3 fw-bold text-primary">Wardrobes & Storage</h2>
+          <h3 class="fs-5 text-secondary mt-2 mb-3">
+            Functional Design Meets Elegant Craftsmanship
+          </h3>
+
+          <p>
+            From sliding wardrobes to custom walk-in closets, we design storage solutions that maximize
+            space while enhancing the visual appeal of your interiors. Made with premium materials and
+            smooth-glide systems.
+          </p>
+
+          <figure class="mt-4">
+            <picture>
+              <source srcset="images/projects/project2.png" type="image/webp">
+              <source srcset="images/projects/project2.png" type="image/jpeg">
+              <img
+                src="images/projects/project2.png"
+                alt="Custom wardrobes - Diamond Engineering"
+                class="img-fluid rounded-4 shadow w-100 product-img"
+                loading="lazy"
+              >
+            </picture>
+            <figcaption class="small text-muted text-center mt-3">
+              Custom modular wardrobes with soft-close systems & premium finishes.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View All Products Button -->
+    <div class="text-center mt-5">
+      <a href="#all-products" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow-sm">
+        View All Products
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* Better image cropping */
+  .product-img {
+    height: 320px;
+    object-fit: cover;
+  }
+
+  /* Hover effect for cards */
+  .product-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.1);
+  }
+</style>
 
 <section id="ts-features" class="ts-features">
   <div class="container">

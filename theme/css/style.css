@@ -669,7 +669,7 @@ ul.top-info li p.info-text {
 
 .header-one,
 .header-one .site-navigation {
-  background: #23282d;
+  background: #0056b3;
 }
 
 .header-one .navbar-collapse {
@@ -693,6 +693,16 @@ ul.top-info li p.info-text {
 }
 .header-one .logo-area {
   padding: 30px 0;
+}
+@media (max-width: 767px) {
+  .header-one .logo-area {
+    display: none !important;
+  }
+}
+@media (max-width: 575px) {
+  .header-one .logo-area {
+    display: none !important;
+  }
 }
 
 .navbar-fixed {
@@ -1235,7 +1245,13 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 .bg-theme {
-  background-color: #9e5f3f;
+  background-color: #B85042;
+}
+
+#logoText {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #fff;
 }
 
 .banner-carousel-item .overlay {
@@ -1585,9 +1601,32 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .into-sub-title {
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 32px;
-  line-height: normal;
-  margin: 10px 0;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 8px 0;
+}
+@media (max-width: 1200px) {
+  .into-sub-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .into-sub-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .into-sub-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .into-sub-title {
+    font-size: 16px;
+    line-height: 1.15;
+    text-align: center;
+    margin: 6px 0;
+  }
 }
 
 /*-- Featured Tab --*/
