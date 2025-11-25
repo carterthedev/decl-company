@@ -3,10 +3,33 @@ $font-secondary: "Inter", sans-serif;
 $font-alternate: "Roboto", sans-serif;
 $font-heading: "Poppins", sans-serif;
 
-$color-secondary: #0056b3;
+/* -----------------------------------
+   Base Brand Colors (Your Existing)
+----------------------------------- */
 $color-primary: #ffb600;
+$color-secondary: #0056b3;
+
 $color-beige: #f5f5dc;
 $color-blue-moderate: #90AFC5;
 
 $color-theme: #B85042;
 $color-theme-secondary: #210b0c;
+
+/* -----------------------------------
+   Premium UI Theme (New Palette)
+----------------------------------- */
+
+/* Main */
+$color-deep-navy: #081849;         // Primary background
+$color-gold: #C9A743;              // Primary accent
+$color-gold-light: #E3C970;        // Secondary accent
+
+/* Text */
+$color-text-light: #FFFFFF;        // Text on dark background
+
+/* States */
+$color-soft-blue: #6E88FF;         // Hover link
+
+/* Lines / UI */
+$color-gray-subtle: #F1F1F3;       // Divider / subtle backgrounds
+

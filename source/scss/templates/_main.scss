@@ -35,6 +35,33 @@
     height: 450px;
   }
 }
+
+.section-title {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title .title {
+  font-size: clamp(1.8rem, 3vw, 2.75rem); /* Responsive scaling */
+}
+
+.section-title .subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin-top: 0.75rem;
+}
+
+.section-title .divider {
+  width: 120px;
+  height: 3px;
+  background: #C9A743; /* Gold accent (premium look) */
+  border: none;
+  margin-top: 1.5rem;
+  opacity: 0.9;
+  border-radius: 50px;
+}
+
+
 .bg-theme {
   background-color: $color-theme;
 }
