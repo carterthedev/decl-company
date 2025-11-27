@@ -1278,7 +1278,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .section-title .divider {
   width: 120px;
   height: 3px;
-  background: #C9A743; /* Gold accent (premium look) */
+  background: #c9a743; /* Gold accent (premium look) */
   border: none;
   margin-top: 1.5rem;
   opacity: 0.9;
@@ -1290,9 +1290,22 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 #logoText {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: #fff;
+  font-family: "Montserrat", "Roboto", sans-serif; /* keep heading style */
+  line-height: 36px;
+  text-transform: none !important;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+#logoText span {
+  color: #C9A743;
+}
+
+#logoText > img {
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 .banner-carousel-item .overlay {
@@ -1564,9 +1577,8 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   line-height: 1.2;
   font-weight: 600;
   color: #ffb600;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montes", sans-serif;
   margin: 0;
-  word-break: break-word;
 }
 @media (max-width: 1200px) {
   #diamondEngineeringTitle {
@@ -1607,10 +1619,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 /* Action style box */
-.call-to-action-box {
-  margin-top: -50px;
-}
-
 .call-to-action-box .action-style-box {
   background: #0056b3;
   padding: 30px;
@@ -1668,6 +1676,10 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
     text-align: center;
     margin: 6px 0;
   }
+}
+
+.text-golden {
+  color: #B85042;
 }
 
 /*-- Featured Tab --*/

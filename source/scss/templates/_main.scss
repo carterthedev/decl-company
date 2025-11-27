@@ -54,23 +54,34 @@
 .section-title .divider {
   width: 120px;
   height: 3px;
-  background: #C9A743; /* Gold accent (premium look) */
+  background: #c9a743; /* Gold accent (premium look) */
   border: none;
   margin-top: 1.5rem;
   opacity: 0.9;
   border-radius: 50px;
 }
 
-
 .bg-theme {
   background-color: $color-theme;
 }
 #logoText {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: #fff;
+  font-family: "Montserrat", "Roboto", sans-serif; /* keep heading style */
+  line-height: 36px;
+  text-transform: none !important; 
+  font-weight: 700;
+  text-decoration: none !important; 
+}
 
-} 
+#logoText span {
+  color: $color-gold;
+}
+
+#logoText > img {
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+}
 .banner-carousel-item .overlay {
   position: relative;
   top: 0;
@@ -321,9 +332,9 @@
   line-height: 1.2;
   font-weight: 600;
   color: $color-primary;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montes", sans-serif;
   margin: 0;
-  word-break: break-word;
+  
 
   @include desktop-lg {
     font-size: 24px;
@@ -360,7 +371,6 @@
 /* Action style box */
 
 .call-to-action-box {
-  margin-top: -50px;
 }
 
 .call-to-action-box .action-style-box {
@@ -415,6 +425,10 @@
     text-align: center;
     margin: 6px 0;
   }
+}
+
+.text-golden {
+  color: $color-theme;
 }
 
 /*-- Featured Tab --*/
