@@ -1,7 +1,15 @@
 @@include('header.htm') @@include('blocks/navigation-1.htm')
-@@include('blocks/page-header.htm', {"title": "Products", "prevpage": "products",
-"currentpage": "All Products"})
-
+@@include('blocks/page-header.htm', {"title": "Products", "prevpage":
+"products", "currentpage": "All Products"})
+<style>
+  .img-fluid {
+    height: 400px; /* Set your preferred constant height */
+    width: 100%;
+    object-fit: contain; /* Ensures image stays proportional */
+    border-radius: 6px; /* Optional: smooth corners */
+    
+  }
+</style>
 <section id="project-area" class="project-area solid-bg">
   <div class="container">
     <div class="row text-center">
@@ -80,7 +88,7 @@
                 aria-label="product-img"
               >
                 <img
-                  class="img-fluid"
+                  class="fixed-img img-fluid"
                   src="https://res.cloudinary.com/dejw2iem0/image/upload/f_auto,q_auto,w_800,c_fill,g_auto/v1764423348/3DTWINE_k2cotc.jpg"
                   alt="3D Twine"
                   loading="lazy"
@@ -1019,7 +1027,6 @@
             </div>
           </div>
 
-      
           <!-- ====================== ACCESSORIES (8 items) ====================== -->
 
           <div
@@ -1243,7 +1250,5 @@
     </div>
   </div>
 </section>
-
-
 
 @@include('footer.htm')
