@@ -67,9 +67,9 @@
 #logoText {
   font-family: "Montserrat", "Roboto", sans-serif; /* keep heading style */
   line-height: 36px;
-  text-transform: none !important; 
+  text-transform: none !important;
   font-weight: 700;
-  text-decoration: none !important; 
+  text-decoration: none !important;
 }
 
 #logoText span {
@@ -334,7 +334,6 @@
   color: $color-primary;
   font-family: "Montes", sans-serif;
   margin: 0;
-  
 
   @include desktop-lg {
     font-size: 24px;
@@ -1454,6 +1453,14 @@ img.testimonial-thumb {
   @include mobile {
     font-size: 32px;
   }
+}
+
+.fixed-img {
+  height: 600px; /* Fixed height */
+  width: 100%; /* Full width */
+  object-fit: contain; /* FITS the image inside (zooms out) instead of cropping */
+  border-radius: 6px;
+  background-color: #f8f9fa; /* Optional: Adds a color to fill empty space */
 }
 
 .banner-text {

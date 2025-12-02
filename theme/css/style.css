@@ -2687,6 +2687,15 @@ img.testimonial-thumb {
   }
 }
 
+.fixed-img {
+  height: 600px; /* Fixed height */
+  width: 100%; /* Full width */
+  -o-object-fit: contain;
+     object-fit: contain; /* FITS the image inside (zooms out) instead of cropping */
+  border-radius: 6px;
+  background-color: #f8f9fa; /* Optional: Adds a color to fill empty space */
+}
+
 .banner-text {
   position: absolute;
   top: 50%;
