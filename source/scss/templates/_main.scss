@@ -1315,7 +1315,6 @@ img.testimonial-thumb {
     a i {
       display: block;
       font-size: 16px;
-      color: #999;
       transition: 400ms;
       padding: 10px 13px;
     }
@@ -2329,4 +2328,26 @@ label {
 
 .whatsapp-button a:hover {
   background-color: #128c7e;
+}
+
+ .social-icons li a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: $color-deep-navy;
+    border-radius: 50%;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+  }
+
+.social-icons li a:hover {
+  background: $color-secondary; /* your brand accent color */
+  color: white;
+  border-color: #ff6f00;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

@@ -439,53 +439,92 @@ FACEBOOK: https://www.facebook.com/themefisher
 <section id="facts" class="facts-area dark-bg">
   <div class="container">
     <div class="facts-wrapper">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 ts-facts">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact1.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="1789">0</span></h2>
-                <h3 class="ts-facts-title">Total Projects</h3>
-              </div>
-          </div><!-- Col end -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 ts-facts">
+          <div class="ts-facts-img">
+            <img
+              loading="lazy"
+              src="images/icon-image/fact1.png"
+              alt="facts-img"
+            />
+          </div>
+          <div class="ts-facts-content">
+            <h2 class="ts-facts-num">
+              <span class="counterUp" data-count="37">0</span>
+            </h2>
+            <h3 class="ts-facts-title">Counties Present</h3>
+          </div>
+        </div>
+        <!-- Col end -->
 
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact2.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="647">0</span></h2>
-                <h3 class="ts-facts-title">Staff Members</h3>
-              </div>
-          </div><!-- Col end -->
+        <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
+          <div class="ts-facts-img">
+            <img
+              loading="lazy"
+              src="images/icon-image/fact2.png"
+              alt="facts-img"
+            />
+          </div>
+          <div class="ts-facts-content">
+            <h2 class="ts-facts-num">
+              <span class="counterUp" data-count="200">0</span>
+            </h2>
+            <h3 class="ts-facts-title">Staff Members</h3>
+          </div>
+        </div>
+        <!-- Col end -->
 
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact3.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="4000">0</span></h2>
-                <h3 class="ts-facts-title">Hours of Work</h3>
-              </div>
-          </div><!-- Col end -->
+        <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+          <div class="ts-facts-img">
+            <img
+              loading="lazy"
+              src="images/icon-image/fact3.png"
+              alt="facts-img"
+            />
+          </div>
+          <div class="ts-facts-content">
+            <h2 class="ts-facts-num">
+              <span class="counterUp" data-count="4000">0</span>
+            </h2>
+            <h3 class="ts-facts-title">Deliveries</h3>
+          </div>
+        </div>
+        <!-- Col end -->
 
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact4.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="44">0</span></h2>
-                <h3 class="ts-facts-title">Countries Experience</h3>
-              </div>
-          </div><!-- Col end -->
-
-        </div> <!-- Facts end -->
+        <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+          <div class="ts-facts-img">
+            <img
+              loading="lazy"
+              src="images/icon-image/fact4.png"
+              alt="facts-img"
+            />
+          </div>
+          <div class="ts-facts-content">
+            <h2 class="ts-facts-num">
+              <span id="experienceYears" class="counterUp" data-count="0">0</span>
+            </h2>
+            <h3 class="ts-facts-title">Years of Experience</h3>
+          </div>
+        </div>
+        <!-- Col end -->
+      </div>
+      <!-- Facts end -->
     </div>
     <!--/ Content row end -->
   </div>
   <!--/ Container end -->
-</section><!-- Facts end --> <section id="ts-service-area" class="ts-service-area pb-0">
+</section>
+<!-- Facts end -->
+<script>
+  const startYear = 2017;
+  const currentYear = new Date().getFullYear();
+  const experienceYears = currentYear - startYear;
+
+  const expElement = document.getElementById("experienceYears");
+  expElement.setAttribute("data-count", experienceYears);
+  expElement.textContent = experienceYears; // show instantly (or let counterUp animate)
+</script>
+ <section id="ts-service-area" class="ts-service-area pb-0">
   <div class="container">
     <div class="row text-center">
       <div class="col-12">
@@ -2151,6 +2190,32 @@ FACEBOOK: https://www.facebook.com/themefisher
   <!--/ Container end -->
 </section>
 <!--/ News end -->
+<style>
+  .footer-social {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+  }
+
+  .social-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+ 
+
+</style>
 <footer id="footer" class="footer bg-overlay">
   <div class="footer-main">
     <div class="container">
@@ -2164,13 +2229,34 @@ FACEBOOK: https://www.facebook.com/themefisher
             src="images/DIAMOND.png"
             alt="Constra"
           />
-          <p>
-            Diamond Engineering Company Limited is a leading construction and
-            engineering firm dedicated to delivering high-quality projects with
-            excellence and integrity.
-          </p>
-          <div class="footer-social">
-            <ul>
+          <div class="d-flex justify-content-between align-items-start">
+            <p>
+              <strong>Diamond Engineering Company Limited</strong> delivers
+              premium interior finishing products with custom design and
+              fabrication services. We offer MDF Boards, Marble Sheets, Gypsum
+              Boards, and an extensive range of accessories tailored to your
+              project requirements.
+            </p>
+          </div>
+          <!-- Footer social end -->
+        </div>
+        <!-- Col end -->
+
+        <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+          <h3 class="widget-title">Working Hours</h3>
+          <div class="working-hours">
+            We work 7 days a week, every day excluding major holidays. Contact
+            us if you have an emergency, with our Hotline and Contact form.
+            <br /><br />
+            Monday - Saturday:
+            <span class="text-right">08:00 am - 05:00 pm </span> <br />
+            Sunday and holidays:
+            <span class="text-right">09:00 am - 04:00 pm</span>
+          </div>
+
+          <div class="footer-social mt-5">
+            <h4 class="social-title mb-3">Let's Interact</h4>
+            <ul class="social-icons">
               <li>
                 <a href="https://facebook.com/" aria-label="Facebook"
                   ><i class="fab fa-facebook-f"></i
@@ -2187,28 +2273,14 @@ FACEBOOK: https://www.facebook.com/themefisher
                 ></a>
               </li>
               <li>
-                <a href="https://github.com/" aria-label="Github"
-                  ><i class="fab fa-github"></i
+                <a href="https://linkedin.com/" aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
                 ></a>
               </li>
             </ul>
           </div>
-          <!-- Footer social end -->
         </div>
-        <!-- Col end -->
 
-        <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
-          <h3 class="widget-title">Working Hours</h3>
-          <div class="working-hours">
-            We work 7 days a week, every day excluding major holidays. Contact
-            us if you have an emergency, with our Hotline and Contact form.
-            <br /><br />
-            Monday - Friday:
-            <span class="text-right">08:00 am - 05:00 pm </span> <br />
-            Saturday: <span class="text-right">12:00 - 15:00</span> <br />
-            Sunday and holidays: <span class="text-right">09:00 - 12:00</span>
-          </div>
-        </div>
         <!-- Col end -->
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
