@@ -1,5 +1,23 @@
 @@include('header.htm') @@include('blocks/navigation-1.htm')
-
+<style>
+  .product-img {
+    position: relative;
+    aspect-ratio: 16 / 10; /* Uniform 16:10 shape */
+    object-fit: contain !important; /* Prevent cropping, show full image */
+  }
+  .product-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.12); /* 12% overlay */
+  }
+  .product-img {
+    border: 12px solid #6d0d0d;
+  }
+  .product-img {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  }
+</style>
 <div class="banner-carousel banner-carousel-1 mb-0">
   <div
     class="banner-carousel-item"
@@ -388,18 +406,18 @@
             <picture>
               <source
                 srcset="
-                  https://res.cloudinary.com/dejw2iem0/image/upload/f_auto,q_auto,w_800,c_fill,g_auto/v1764423322/WHITECHERRY_qezd3s.jpg
+                  https://res.cloudinary.com/dejw2iem0/image/upload/f_auto,q_auto,w_800/v1764423609/IMG_1053_ojphag.jpg
                 "
                 type="image/webp"
               />
               <source
                 srcset="
-                  https://res.cloudinary.com/dejw2iem0/image/upload/f_auto,q_auto,w_800,c_fill,g_auto/v1764423322/WHITECHERRY_qezd3s.jpg
+                  https://res.cloudinary.com/dejw2iem0/image/upload/f_auto,q_auto,w_800/v1764423609/IMG_1053_ojphag.jpg
                 "
                 type="image/jpeg"
               />
               <img
-                src="https://res.cloudinary.com/dejw2iem0/image/upload/f_auto,q_auto,w_800,c_fill,g_auto/v1764423322/WHITECHERRY_qezd3s.jpg"
+                src="https://res.cloudinary.com/dejw2iem0/image/upload/f_auto,q_auto,w_800/v1764423609/IMG_1053_ojphag.jpg"
                 alt="Accessories"
                 class="img-fluid rounded-4 shadow w-100 product-img"
                 loading="lazy"

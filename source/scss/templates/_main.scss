@@ -1290,8 +1290,12 @@ img.testimonial-thumb {
 /* Footer about us */
 
 .footer-logo {
+  width: 60%;
+  max-width: 80px; /* same as your original width */
   margin-bottom: 25px;
   background-color: #fff;
+  display: block;
+  height: 80px;
 }
 
 /* Footer social */
@@ -2330,19 +2334,19 @@ label {
   background-color: #128c7e;
 }
 
- .social-icons li a {
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    color: $color-deep-navy;
-    border-radius: 50%;
-    font-size: 18px;
-    border: 1px solid #ddd;
-    transition: all 0.3s ease;
-  }
+.social-icons li a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: $color-deep-navy;
+  border-radius: 50%;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
 
 .social-icons li a:hover {
   background: $color-secondary; /* your brand accent color */
