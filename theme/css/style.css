@@ -1298,7 +1298,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 #logoText span {
-  color: #C9A743;
+  font-family: "Montserrat", "Roboto", sans-serif;
 }
 
 #logoText > img {
