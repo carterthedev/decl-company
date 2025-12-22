@@ -1,0 +1,115 @@
+@@include('header.htm') @@include('blocks/navigation-1.htm')
+@@include('blocks/page-header.htm', { "title": "Shop", "prevpage": "Home",
+"currentpage": "Shop" })
+
+<style>
+  .img-fluid {
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+</style>
+
+<section id="main-container" class="main-container pb-4">
+  <div class="container">
+    <!-- ABOUT SHOP -->
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h2 class="section-title">About Diamond Engineering</h2>
+        <p>
+          Premium interior solutions designed with elegance, durability, and
+          precision craftsmanship.
+        </p>
+        <p>
+          Founded in August 2017, Diamond Engineering has grown into a trusted
+          supplier of interior decoration materials. With a main warehouse in
+          Ndeiya Mboroti, Kiambu County, and an outlet in Kikuyu town, we serve
+          small and medium hardware businesses across the region.
+        </p>
+      </div>
+    </div>
+
+    <!-- PRODUCT CATALOG -->
+    <div class="row mb-5">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Products & Accessories</h2>
+        <h3 class="section-sub-title">Product Catalogue</h3>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <ul class="list-group">
+          <li class="list-group-item">MDF Boards</li>
+          <li class="list-group-item">Ceiling Boards</li>
+          <li class="list-group-item">Plywood & Block Boards</li>
+          <li class="list-group-item">Gypsum Boards & Accessories</li>
+          <li class="list-group-item">Frames & Finishing Materials</li>
+          <li class="list-group-item">Wooden Doors (In-house)</li>
+          <li class="list-group-item">Gypsum Cornices & Medallions</li>
+          <li class="list-group-item">Channels & Studs</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SHOP PHOTOS -->
+    <div class="row mb-5">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Shop Gallery</h2>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-3">
+        <img
+          src="images/shop/shop-1.jpg"
+          class="img-fluid"
+          alt="Shop Interior"
+        />
+      </div>
+      <div class="col-lg-4 col-md-6 mb-3">
+        <img
+          src="images/shop/shop-2.jpg"
+          class="img-fluid"
+          alt="Product Display"
+        />
+      </div>
+      <div class="col-lg-4 col-md-6 mb-3">
+        <img src="images/shop/shop-3.jpg" class="img-fluid" alt="Warehouse" />
+      </div>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h2 class="section-title">Our Location</h2>
+        <p>
+          <strong>Main Warehouse:</strong> Ndeiya Mboroti Town, Kiambu County<br />
+          <strong>Outlet Shop:</strong> Kikuyu Town
+        </p>
+
+        <!-- Optional Google Map Embed -->
+        <iframe
+          src="https://www.google.com/maps?q=Kikuyu%20Town&output=embed"
+          width="100%"
+          height="350"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <!-- CONTACT DETAILS -->
+    <div class="row mb-4">
+      <div class="col-lg-12">
+        <h2 class="section-title">Contact Details</h2>
+        <p>
+          <strong>Phone:</strong> +254 XXX XXX XXX<br />
+          <strong>Email:</strong> info@diamondengineering.co.ke<br />
+          <strong>Business Hours:</strong> Monday – Saturday, 8:00 AM – 6:00 PM
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('footer.htm')
