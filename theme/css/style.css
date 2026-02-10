@@ -3628,4 +3628,33 @@ label {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+/* Mobile (default) */
+.slider-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .slider-description {
+    font-size: 16px;
+  }
+}
+/* Desktop and up */
+@media (min-width: 1024px) {
+  .slider-description {
+    font-size: 18px;
+  }
+}
+.title {
+  font-size: 18px !important;
+  margin-bottom: 10px;
+}
+.title a {
+  color: #fff;
+}
+.title a:hover {
+  color: #ffb600;
+}
 /*# sourceMappingURL=style.css.map */

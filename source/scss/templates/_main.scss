@@ -59,7 +59,6 @@
   margin-top: 1.5rem;
   opacity: 0.9;
   border-radius: 50px;
-
 }
 
 .bg-theme {
@@ -236,8 +235,6 @@
     max-height: 100%;
   }
 }
-
-
 
 /* Carousel control */
 .banner-carousel .carousel-control {
@@ -2400,4 +2397,37 @@ label {
   border-color: #ff6f00;
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+// slider description
+/* Mobile (default) */
+.slider-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .slider-description {
+    font-size: 16px;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+  .slider-description {
+    font-size: 18px;
+  }
+}
+
+// Project item info content
+.title {
+  font-size: 18px !important;
+  margin-bottom: 10px;
+  a {
+    color: #fff;
+    &:hover {
+      color: $color-primary;
+    }
+  }
 }
