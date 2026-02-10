@@ -304,6 +304,29 @@ a:focus {
   margin-bottom: 20px;
 }
 
+.company-title {
+  display: block; /* stack naturally on mobile */
+  font-size: 1.1rem; /* readable on small screens */
+  line-height: 1.3;
+  text-align: center;
+  padding: 0.5rem 0.75rem;
+  word-break: break-word; /* prevent overflow */
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .company-title {
+    display: inline-block;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+}
+/* Desktop and up */
+@media (min-width: 1024px) {
+  .company-title {
+    font-size: 1.5rem;
+  }
+}
 /* Title Border */
 /* Section title */
 .section-title {
@@ -427,7 +450,7 @@ blockquote:before {
   font-family: "Font Awesome 5 Free";
   position: absolute;
   font-size: 28px;
-  color: #E5E5E5;
+  color: #e5e5e5;
   top: 5px;
   left: 5px;
   font-weight: 700;
@@ -1276,7 +1299,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 .section-title .divider {
-  width: 120px;
+  width: 400px;
   height: 3px;
   background: #c9a743; /* Gold accent (premium look) */
   border: none;

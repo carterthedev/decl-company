@@ -131,7 +131,7 @@
               />
             </a>
 
-            <span id="diamondEngineeringTitle" class="d-inline-block ml-2">
+            <span id="diamondEngineeringTitle" class="d-inline-block">
               Diamond Engineering Company Limited
             </span>
           </div>
@@ -195,8 +195,8 @@
                 alt="Diamond Engineering Company Limited"
                 style="height: 40px"
               />
-              <span class="ms-2 p-2 text-uppercase fw-bold" style=""
-                >Diamond Engineering <br />
+              <span class="company-title">
+                Diamond Engineering <br />
                 Company Limited</span
               >
             </a>
@@ -217,7 +217,7 @@
               <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item dropdown active">
                   <a href="index.html" class="nav-link dropdown-toggle">Home</a>
-                  <!-- <ul class="dropdown-menu" role="menu"> 
+                  <!-- <ul class="dropdown-menu" role="menu">
                             <li class="active"><a href="index.html">Home One</a></li>
                             <li><a href="index-2.html">Home Two</a></li>
                           </ul> -->
@@ -303,7 +303,7 @@
                 <li class="nav-item">
                   <a href="https://wa.me/254700000000" target="_blank">
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                      src="images/WhatsApp.svg"
                       alt="Chat on WhatsApp"
                       style="width: 50px; height: 50px"
                     />
@@ -378,158 +378,186 @@
 </div>
 <!-- Banner area end -->
 
-
 <section id="main-container" class="main-container">
   <div class="container">
-    <div class="row text-center">
+    <div class="row text-center mb-5">
       <div class="col-12">
-        <h2 class="section-title">Reaching our Office</h2>
-        <h3 class="section-sub-title">Find Our Location</h3>
+        <h2 class="section-title">Get in Touch</h2>
+        <h3 class="section-sub-title">We’d Love to Hear From You</h3>
       </div>
     </div>
-    <!--/ Title row end -->
 
     <div class="row">
-      <div class="col-md-4">
-        <div class="ts-service-box-bg text-center h-100">
-          <span class="ts-service-icon icon-round">
-            <i class="fas fa-map-marker-alt mr-0"></i>
-          </span>
-          <div class="ts-service-box-content">
-            <h4>Visit Our Office</h4>
-            <p>Ndeiya - Mboroti town, Kiambu county</p>
-          </div>
-        </div>
-      </div>
-      <!-- Col 1 end -->
+      <!-- CONTACT FORM -->
+      <div class="col-md-6">
+        <h3 class="column-title mb-4">Contact Us</h3>
 
-      <div class="col-md-4">
-        <div class="ts-service-box-bg text-center h-100">
-          <span class="ts-service-icon icon-round">
-            <i class="fa fa-envelope mr-0"></i>
-          </span>
-          <div class="ts-service-box-content">
-            <h4>Email Us</h4>
-            <p>info@diamondeng.co.ke</p>
-          </div>
-        </div>
-      </div>
-      <!-- Col 2 end -->
+        <form id="contact-form" role="form">
+          <div class="error-container text-danger mb-3"></div>
+          <div class="success-container text-success mb-3"></div>
 
-      <div class="col-md-4">
-        <div class="ts-service-box-bg text-center h-100">
-          <span class="ts-service-icon icon-round">
-            <i class="fa fa-phone-square mr-0"></i>
-          </span>
-          <div class="ts-service-box-content">
-            <p>+254 755 400 054</p>
-            <p>+254 755 400 064</p>
-          </div>
-        </div>
-      </div>
-      <!-- Col 3 end -->
-    </div>
-    <!-- 1st row end -->
-
-    <div class="gap-60"></div>
-    <h3 class="fw-semibold text-center mb-4">Our Location</h3>
-
-
-<div class="row mb-4">
-  <div class="col-md-6">
-    <h5 class="fw-semibold">Main Warehouse</h5>
-    <p>Ndeiya Mboroti Town, Kiambu County</p>
-  </div>
-  <div class="col-md-6">
-    <h5 class="fw-semibold">Outlet Shop</h5>
-    <p>Kikuyu Town</p>
-  </div>
-</div>
-    <div class="google-map d-flex justify-content-center">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5057.1714938911955!2d36.66430837717788!3d-1.2444136913922015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1fd0599ab5df%3A0xdacf46128198e981!2sDiamond%20Engineering!5e0!3m2!1sen!2ske!4v1766402370711!5m2!1sen!2ske"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-    <div class="gap-40"></div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <h3 class="column-title">Contact Us</h3>
-        <!-- contact form works with formspree.io  -->
-        <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
-        <form id="contact-form" action="#" method="post" role="form">
-          <div class="error-container"></div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="form-group">
-                <label>Name</label>
+                <label for="name">Full Name</label>
                 <input
-                  class="form-control form-control-name"
+                  class="form-control"
                   name="name"
                   id="name"
-                  placeholder=""
                   type="text"
+                  placeholder="Your full name"
                   required
                 />
               </div>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-md-6">
               <div class="form-group">
-                <label>Email</label>
+                <label for="email">Email Address</label>
                 <input
-                  class="form-control form-control-email"
+                  class="form-control"
                   name="email"
                   id="email"
-                  placeholder=""
                   type="email"
-                  required
-                />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label>Subject</label>
-                <input
-                  class="form-control form-control-subject"
-                  name="subject"
-                  id="subject"
-                  placeholder=""
+                  placeholder="you@example.com"
                   required
                 />
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  class="form-control"
+                  name="phone"
+                  id="phone"
+                  type="tel"
+                  placeholder="+254 7XX XXX XXX"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  required
+                >
+                  <option value="" disabled selected>Select a subject</option>
+                  <option value="purchase">Purchase Inquiry</option>
+                  <option value="availability">Product Availability</option>
+                  <option value="quotation">Request a Quotation</option>
+                  <option value="technical">Technical Support</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
           <div class="form-group">
-            <label>Message</label>
+            <label for="message">Message</label>
             <textarea
-              class="form-control form-control-message"
+              class="form-control"
               name="message"
               id="message"
-              placeholder=""
-              rows="10"
+              rows="6"
+              placeholder="Write your message here..."
               required
             ></textarea>
           </div>
-          <div class="text-right">
-            <br />
-            <button class="btn btn-primary solid blank" type="submit">
+
+          <div class="text-right mt-3">
+            <button class="btn btn-primary solid" type="submit">
               Send Message
             </button>
           </div>
         </form>
       </div>
+
+      <script>
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const errorContainer = form.querySelector(".error-container");
+            const successContainer = form.querySelector(".success-container");
+            const button = form.querySelector('button[type="submit"]');
+
+            // Clear previous messages
+            errorContainer.innerHTML = "";
+            successContainer.innerHTML = "";
+            button.disabled = true;
+            button.textContent = "Sending...";
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+
+            fetch("http://localhost:8000/api/contact-form", {
+              // Replace with your actual domain
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+              },
+              body: JSON.stringify(data),
+            })
+              .then((response) => response.json())
+              .then((result) => {
+                if (result.success) {
+                  successContainer.innerHTML =
+                    result.message || "Thank you! Your message has been sent.";
+                  form.reset();
+                } else {
+                  errorContainer.innerHTML =
+                    result.message || "Something went wrong. Please try again.";
+                }
+              })
+              .catch((err) => {
+                errorContainer.innerHTML =
+                  "Network error. Please check your connection and try again.";
+              })
+              .finally(() => {
+                button.disabled = false;
+                button.textContent = "Send Message";
+              });
+          });
+      </script>
+
+      <!-- MAP & LOCATION -->
+      <div class="col-md-6">
+        <h3 class="column-title mb-4">Our Location</h3>
+
+        <div class="mb-3">
+          <h5 class="fw-semibold">Main Warehouse</h5>
+          <p>Ndeiya – Mboroti Town, Kiambu County</p>
+
+          <h5 class="fw-semibold mt-3">Outlet Shop</h5>
+          <p>Kikuyu Town</p>
+        </div>
+
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5057.1714938911955!2d36.66430837717788!3d-1.2444136913922015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1fd0599ab5df%3A0xdacf46128198e981!2sDiamond%20Engineering!5e0!3m2!1sen!2ske!4v1766402370711!5m2!1sen!2ske"
+            width="100%"
+            height="420"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
     </div>
-    <!-- Content row -->
   </div>
-  <!-- Conatiner end -->
 </section>
-<!-- Main container end -->
 
 <style>
   .footer-social {
