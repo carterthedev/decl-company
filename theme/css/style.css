@@ -1368,6 +1368,11 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   color: #fff;
 }
 
+.highlight {
+  color: #ffb600;
+  font-weight: 700;
+}
+
 /* ---------- Titles ---------- */
 .slide-title-box {
   font-size: 14px;
