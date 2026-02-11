@@ -3633,9 +3633,8 @@ label {
   .page-slider,
   #banner-area,
   .divider,
-  .working-hours > p,
-  .footer-main > .container > .row > .col-md-4 > .working-hours > p {
-    display: none;
+  #useful-links {
+    display: none !important;
   }
   .section-title {
     font-size: 24px;

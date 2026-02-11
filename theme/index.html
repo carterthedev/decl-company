@@ -383,25 +383,7 @@
             <h3
               class="slide-title"
               data-animation-in="fadeIn"
-              style="
-                /* Override styles for slide titles */
-                h3.slide-title {
-                  font-family:"Montserrat","Roboto", sans-serif; /* keep heading style */
-
-                  text-transform: none !important; /* retain original text casing */
-
-                  color: #212121; /* override color if needed */
-                  text-decoration: none !important; /* remove underline from inline style */
-                }
-
-                /* Optional: animation-specific adjustments */
-                h3.slide-title[data-animation-in] {
-                  font-family: inherit;
-                  font-weight: inherit;
-                  color: inherit;
-                  text-transform: inherit;
-                }
-              "
+              
             >
               NO ORDER is too SMALL TO DELIVER
             </h3>
@@ -1141,7 +1123,10 @@
 
         <!-- Col end -->
 
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+        <div
+          id="useful-links"
+          class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"
+        >
           <h3 class="widget-title">Useful Links</h3>
           <ul class="list-arrow">
             <li><a href="home.html">Home</a></li>
