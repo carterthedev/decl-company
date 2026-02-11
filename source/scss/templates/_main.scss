@@ -2421,8 +2421,15 @@ label {
 // }
 @media (max-width: 768px) {
   .page-slider,
-  #banner-area {
+  #banner-area,
+  .divider,
+  .working-hours > p,
+  .footer-main > .container > .row > .col-md-4 > .working-hours > p {
     display: none;
+  }
+  .section-title {
+    font-size: 24px;
+    padding: 0 15px;
   }
 }
 
