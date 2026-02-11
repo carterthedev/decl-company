@@ -2422,13 +2422,16 @@ label {
 @media (max-width: 768px) {
   .page-slider,
   #banner-area,
-  .divider,
-  #useful-links {
+  .divider {
     display: none !important;
   }
   .section-title {
     font-size: 24px;
     padding: 0 15px;
+  }
+
+  #useful-links {
+    display: none !important;
   }
 }
 
@@ -2458,4 +2461,8 @@ h3.slide-title[data-animation-in] {
   font-weight: inherit;
   color: inherit;
   text-transform: inherit;
+}
+
+section {
+  padding: 20px;
 }
