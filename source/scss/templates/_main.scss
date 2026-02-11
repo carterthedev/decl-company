@@ -2400,23 +2400,29 @@ label {
 }
 
 // slider description
-/* Mobile (default) */
-.slider-description {
-  font-size: 14px;
-  line-height: 1.5;
-}
+// /* Mobile (default) */
+// .slider-description {
+//   font-size: 14px;
+//   line-height: 1.5;
+// }
 
-/* Tablet and up */
-@media (min-width: 768px) {
-  .slider-description {
-    font-size: 16px;
-  }
-}
+// /* Tablet and up */
+// @media (min-width: 768px) {
+//   .slider-description {
+//     font-size: 16px;
+//   }
+// }
 
-/* Desktop and up */
-@media (min-width: 1024px) {
-  .slider-description {
-    font-size: 18px;
+// /* Desktop and up */
+// @media (min-width: 1024px) {
+//   .slider-description {
+//     font-size: 18px;
+//   }
+// }
+@media (max-width: 768px) {
+  .page-slider,
+  #banner-area {
+    display: none;
   }
 }
 
@@ -2430,4 +2436,20 @@ label {
       color: $color-primary;
     }
   }
+}
+
+/* Override styles for slide titles */
+h3.slide-title {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  text-transform: none !important;
+  color: #212121;
+  text-decoration: none !important;
+}
+
+/* Optional: animation-specific adjustments */
+h3.slide-title[data-animation-in] {
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-transform: inherit;
 }

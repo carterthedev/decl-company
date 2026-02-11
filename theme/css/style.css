@@ -3629,22 +3629,10 @@ label {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Mobile (default) */
-.slider-description {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* Tablet and up */
-@media (min-width: 768px) {
-  .slider-description {
-    font-size: 16px;
-  }
-}
-/* Desktop and up */
-@media (min-width: 1024px) {
-  .slider-description {
-    font-size: 18px;
+@media (max-width: 768px) {
+  .page-slider,
+  #banner-area {
+    display: none;
   }
 }
 .title {
@@ -3656,5 +3644,21 @@ label {
 }
 .title a:hover {
   color: #ffb600;
+}
+
+/* Override styles for slide titles */
+h3.slide-title {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  text-transform: none !important;
+  color: #212121;
+  text-decoration: none !important;
+}
+
+/* Optional: animation-specific adjustments */
+h3.slide-title[data-animation-in] {
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-transform: inherit;
 }
 /*# sourceMappingURL=style.css.map */
